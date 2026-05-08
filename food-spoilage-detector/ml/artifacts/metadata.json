@@ -53,5 +53,33 @@
       "on_time_warning_rate_24h": 0.0,
       "false_alarm_rate": 0.0
     }
+  },
+  {
+    "model": "lstm",
+    "trained_at": "2026-05-08T16:49:49.889328+00:00",
+    "data_sha256": "2b0e4c0ca0a5871e0d453dfd0f6ec95b3598e0adcee9d469abb52b2e8dccfac1",
+    "feature_order": [
+      "temp_c",
+      "humidity_pct",
+      "co2_ppm",
+      "ethylene_ppm",
+      "methane_ppm",
+      "hours_since_harvest",
+      "ripeness_estimate"
+    ],
+    "target": "days_until_spoilage",
+    "window": 48,
+    "val": {
+      "mae_days": 0.02338148094713688,
+      "rmse_days": 0.042955655604600906,
+      "r2": 0.9997687935829163
+    },
+    "test": {
+      "mae_days": 0.02702443301677704,
+      "rmse_days": 0.047851622104644775,
+      "r2": 0.9996328353881836,
+      "on_time_warning_rate_24h": 0.0,
+      "false_alarm_rate": 0.0
+    }
   }
 ]
